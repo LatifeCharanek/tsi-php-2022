@@ -34,5 +34,16 @@ for ($i = 0 ; $i < count($aluno) ; $i++ ){
                 <td> {$aluno[$i]['semestre']} </td>
            </tr>";
 }
+
+foreach($aluno as $indice => $valor ){
+
+        echo "   <tr>
+                        <td>{$valor["matricula"]}</td>
+                        <td>{$valor  ["nome"]}</td>
+                        <td>{$valor["semestre"]}</td>
+                </tr>";
+
+
+}
  
 echo '</table>'; 
