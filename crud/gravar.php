@@ -30,9 +30,10 @@ rotulos(ex:":nome")pelos dados inseguros
 */
 
 if($consulta ->execute()){
-    echo "Gravou com sucesso!";
+    $gravou =  true;
 }else{
-    echo "ERRO ao gravar no banco de dados";
+    $gravou = false;
 }
 //Finalmente executamos a consulta no SGBD 
 
+include 'index.php';
